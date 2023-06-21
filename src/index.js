@@ -2,18 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+// add bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
+import Footer from './components/Footer';
+import Menu from './components/Menu';
+import { AuthProvider } from './context/Auth.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <h1>Component</h1>
-    <Home/>
-    <Login/>
-    <Signup/>
+    <AuthProvider>
+      <BrowserRouter>
+        <Menu />
+        <AppRouter />
+        <Footer />
+      </BrowserRouter>
+    </AuthProvider>
   </React.StrictMode>
 );
 
