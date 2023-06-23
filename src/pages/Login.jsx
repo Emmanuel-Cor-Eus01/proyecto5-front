@@ -11,7 +11,7 @@ function Login() {
         password: ''
     });
 
-    const {isLogin, toggleLogin, setToken} = useContext(AuthContext);
+    const {setToken, login} = useContext(AuthContext);
 
     const handleInputChange = (event) => {
         // este va estableciendo el balor de los input al state del formulario
@@ -23,15 +23,12 @@ function Login() {
 
     const handleSubmit = (event) => {
         // este va ser el envio del formuladio al backend
-        console.log(process.env.REACT_APP_API);
         event.preventDefault();
         console.log(formLogin, "formLogin");
         loginService(formLogin)
             .then((response) => {
                 // funciono el login
-                console.log(response);
-                toggleLogin();
-                setToken(response.detalle);
+                login(response.data.detalle);
                 Swal.fire({
                     icon:'success',
                     title: 'Mensaje',
@@ -52,11 +49,7 @@ function Login() {
     return (
         <section className="ftco-section">
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-6 text-center mb-5">
-                        <h2 className="heading-section">Login Ecommerce Web({isLogin.toString()})</h2>
-                    </div>
-                </div>
+                
                 <div className="row justify-content-center">
                     <div className="col-md-7 col-lg-5">
                         <div className="wrap">

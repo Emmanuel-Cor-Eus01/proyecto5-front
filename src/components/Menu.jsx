@@ -1,13 +1,56 @@
+
+import { useContext } from 'react';
+import { AuthContext } from '../context/Auth.context';
+import { NavLink } from 'react-router-dom';
+import { BsFillCartFill } from 'react-icons/bs';
+
+
 function Menu() {
-    const login = true;
-    // importar contexto....
+    const { isLogin, logout, userInfo} = useContext(AuthContext);
+
+    let publicMenu = () => {
+        return (
+            <header className='header'>
+                <div className="nav-wrapper">
+                    <div className="header-side-1">
+                        <NavLink to="/home"> CafeMX</NavLink>
+                        <NavLink to="/products">Productos</NavLink>
+                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/signup">Signup</NavLink>
+                    </div>
+                    <div className="header-side-2">
+                        <NavLink to="/login">Login</NavLink>
+                    </div>
+                </div>
+            </header>
+        )
+    }
+
+    let privateMenu = () => {
+        return (
+            <header className='header'>
+                <div className="nav-wrapper">
+                    <div className="header-side-1">
+                        <NavLink to="/home"> CafeMX</NavLink>
+                        <NavLink to="/products">Productos</NavLink>
+                        <NavLink to="/about">About</NavLink>
+                    </div>
+                    <div className="header-side-2">
+                        <NavLink to="/checkout"><BsFillCartFill /></NavLink>
+                        <NavLink to="/profile" style={{ "textDecoration": "underline" }}>{userInfo.nombre}</NavLink>
+                        <button className='btn btn-light btn-sm ms-2' onClick={logout}>Logout</button>
+                    </div>
+                </div>
+            </header>
+        )
+    }
+
     return (
-    <div>
-        <h1>Menu</h1>
-        {
-            login && <button>Salir</button>
-        }
-    </div>
+        <>
+            {
+                isLogin ? (privateMenu()) : (publicMenu())
+            }
+        </>
     );
 }
 

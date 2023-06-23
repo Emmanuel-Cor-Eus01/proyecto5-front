@@ -21,38 +21,33 @@ function Signup() {
     const handleSubmit = (event) => {
         event.preventDefault();
         registerService(formSignUp)
-        .then(response => {
-            console.log(response);
-            Swal.fire({
-                icon: 'success',
-                title: 'Mensaje',
-                text: 'Usuario registrado correctamente',
-                confirmButtonColor: '#01d28e',
-            });
-        })
-        .catch(error => {
-            console.log(error);
-            Swal.fire({
-                icon: 'error',
-                title: 'Mensaje',
-                text: 'Error al registrar usuario',
-            });
-        })
+            .then(response => {
+                console.log(response);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Mensaje',
+                    text: 'Usuario registrado correctamente',
+                    confirmButtonColor: '#01d28e',
+                });
+            })
+            .catch(error => {
+                console.log(error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Mensaje',
+                    text: 'Error al registrar usuario',
+                });
+            })
     }
 
     return (
         <section className="ftco-section">
             <div className="container">
-            <div className="row justify-content-center">
-                    <div className="col-md-6 text-center mb-5">
-                        <h2 className="heading-section">Signup Ecommerce Web</h2>
-                    </div>
-                </div>
+
                 <div className="row justify-content-center">
                     <div className="col-md-7 col-lg-5">
                         <div className="wrap">
-                            <div className="img" style={{ backgroundImage: `url(${banerLogo})` }} />
-
+                        <div className="img" style={{ backgroundImage: `url(${banerLogo})` }} />
                             <div className="login-wrap p-4 p-md-5">
                                 <div className="d-flex">
                                     <div className="w-100">
