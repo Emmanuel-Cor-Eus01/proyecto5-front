@@ -13,7 +13,7 @@ function Menu() {
             <header className='header'>
                 <div className="nav-wrapper">
                     <div className="header-side-1">
-                        <NavLink to="/home"> CafeMX</NavLink>
+                        <NavLink to="/home"> China Marketplace</NavLink>
                         <NavLink to="/products">Productos</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/signup">Signup</NavLink>
@@ -31,8 +31,8 @@ function Menu() {
             <header className='header'>
                 <div className="nav-wrapper">
                     <div className="header-side-1">
-                        <NavLink to="/home"> CafeMX</NavLink>
-                        <NavLink to="/products">Productos</NavLink>
+                        <NavLink to="/home">China Marketplace</NavLink>
+                        <NavLink to="/products">Products</NavLink>
                         <NavLink to="/about">About</NavLink>
                     </div>
                     <div className="header-side-2">

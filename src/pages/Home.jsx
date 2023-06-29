@@ -1,6 +1,8 @@
+import Hero from "../components/Hero";
+
 function Home() {
     return ( 
-        <h1>entro al home</h1>
+        <Hero/>
     );
 }
 

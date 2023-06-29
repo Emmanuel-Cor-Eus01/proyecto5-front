@@ -1,33 +1,26 @@
-import Hero from "../components/Hero";
+import chiLog from '../images/logo-china.jpg';
+
 const About = () => {
     return (
         <>
-            <Hero/>
-            <div style={{ padding: "5rem" }}>
-                <h1>Componente about</h1>
-                <img src="https://www.stelorder.com/wp-content/uploads/2021/09/portada-empresa.jpg" style={{ width: "100%", marginBottom: "1rem" }} alt="" />
-                <h2>Lorem ipsum dolor</h2>
-                <p>
-                    Do officia elit do aliqua incididunt Lorem aliquip culpa consequat. Amet reprehenderit voluptate culpa elit cillum. Labore duis mollit ea magna et exercitation dolore tempor mollit pariatur cupidatat. Consequat amet cillum aute culpa sit pariatur mollit nisi ad irure. Commodo aliquip esse exercitation enim ullamco laborum. Eu fugiat ex dolore Lorem.
+            <div className='div-about' style={{ padding: "2rem" }}>
+                <img src={chiLog} style={{ width: "100%", marginBottom: "1rem" }} alt="" />
 
-                    Mollit nisi laborum magna exercitation sit in. Fugiat et ut minim id fugiat officia ad non ut nulla sunt sit sunt tempor. Nisi in eiusmod aliquip sunt anim cupidatat cupidatat esse.
+                <h2 className='about-title text-center p-2'>¿QUIENES SOMOS?</h2>
+                <h4 className='text-about text-justify p-2'>
+                China tiene el mercado de comercio electrónico más grande del mundo, por mucho, así como la segunda economía más grande del mundo. Las ventas minoristas en línea de China en 2020 fueron de $ 1,414 mil millones, que es casi el doble del tamaño del siguiente mercado de comercio electrónico más grande en los EE. UU. <br></br>
 
-                    Nisi exercitation esse velit exercitation do ad. Voluptate est aliquip tempor tempor nulla ad sit eiusmod cupidatat aute. Culpa ullamco dolor aliquip excepteur laborum mollit fugiat aute occaecat. Anim amet aliquip nisi laboris labore magna et quis qui qui. Ad laborum nulla dolore do aliquip sint laboris nulla occaecat occaecat amet eiusmod.
+El mercado de comercio electrónico de China es responsable del 33 % del total de las ventas minoristas en línea a nivel mundial. El comercio electrónico en China ahora representa el 25% de las ventas minoristas totales en el país, en comparación con el 14% en los EE. UU. <br></br><br></br>
 
-                    Aliqua consectetur elit ut excepteur est ut veniam enim irure. Consectetur amet ipsum pariatur irure esse aute aliqua ea eu exercitation laborum excepteur. Fugiat sunt culpa mollit nisi consectetur ullamco esse. Quis minim ex nulla nisi consectetur.
+Los principales actores del comercio electrónico en China son todas empresas nacionales: Alibaba, JD.com y Pinduoduo. Juntos, sus mercados dominan el comercio electrónico en China con una cuota de mercado combinada del 89,4 %.
 
-                    Officia consectetur commodo veniam eu cupidatat laborum id incididunt duis consectetur aliqua aliquip veniam Lorem. Lorem exercitation adipisicing officia quis esse sunt eu sunt nostrud. Aliqua irure velit in voluptate ad enim veniam ut.
+Cuando se trata de comercio minorista en línea, China está realmente en una liga propia.<br></br><br></br>
 
-                    Duis ipsum esse excepteur dolor Lorem magna culpa labore. Laborum mollit ut Lorem cupidatat sit voluptate eiusmod. Occaecat ut proident cupidatat ex sint enim. Qui deserunt magna consectetur cupidatat nisi excepteur cillum officia cillum. Amet ut ea amet nostrud.
+Por consecuencia nuestra empresa esta dentro del mercado electronico de china, brindandole nuestros mejores productos hasta las puertas de su casa y teniendo varias bodegas dentro de la republica mexicana para que pueda checar la calidad de nuestros productos en fisico. <br></br>
+                </h4>
+                <h2 className='about-title text-center p-4'>NUESTRAS SEDES</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d222808.41208575078!2d-99.20534460373884!3d19.430158876869157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schina%20market!5e0!3m2!1ses!2smx!4v1688012374245!5m2!1ses!2smx" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='mapa'/>
 
-                    Aliqua proident enim id id proident. Deserunt esse consectetur aute dolore labore ipsum officia reprehenderit minim pariatur esse. Duis aliquip ipsum ad commodo incididunt qui aute amet incididunt labore occaecat. Tempor proident cupidatat do in cupidatat.
-
-                    Culpa sunt consequat aliqua magna ea nulla cillum elit veniam ea quis ea id. Incididunt consequat exercitation adipisicing est. Nulla ipsum incididunt do mollit ipsum fugiat ex id tempor fugiat.
-
-                    Proident irure ut eiusmod do eu qui duis deserunt. Anim exercitation qui ullamco quis culpa. Voluptate dolor incididunt labore sunt labore.
-
-                    Adipisicing ut ad ipsum ullamco ut laboris aute incididunt eu. Est est anim sint esse deserunt deserunt occaecat. Labore proident ut est dolor pariatur mollit pariatur. Eu eiusmod deserunt ut consectetur labore non exercitation ullamco.
-                </p>
             </div>
         </>
 

@@ -1,10 +1,11 @@
+import { NavLink } from 'react-router-dom';
 const Hero = () => {
     return (
         <div className="hero">
             <div className="hero-inner">
-                <h1>Café Mexicano</h1>
-                <h2>100% Natural no te lo pierdas!</h2>
-                <a href="https://example.com/" className="btn">Go ahead...</a>
+                <h1>CHINA MARKETPLACE</h1>
+                <h2>VENTA DE ARTICULOS AL MAYOREO Y MENUDEO</h2>
+                <a href="https://example.com/" className="btn">VER PRODUCTOS</a>
             </div>
         </div>
     );

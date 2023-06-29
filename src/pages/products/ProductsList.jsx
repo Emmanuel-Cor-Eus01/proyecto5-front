@@ -69,7 +69,7 @@ const ProductList = () => {
 
                                                 <div className="d-grid gap-2">
                                                     <button type="button" className="btn btn-primary btn-sm" onClick={() => addProductToCart(product)}>Agregar al carrito</button>
-                                                    <Link to={`/detail-product/${product._id}`} className="btn btn-warning btn-sm">Detalle</Link>
+                                                    <Link to={`/detail-product/${product._id}`} className="btn btn-info btn-sm">Detalle</Link>
                                                 </div>
                                             </div>
                                         </div>
