@@ -1,4 +1,5 @@
 import bannerLogo from '../images/bg-1.jpg';
+import { NavLink } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { loginService } from '../services/Auth.services';
 import Swal from 'sweetalert2';
@@ -11,7 +12,7 @@ function Login() {
         password: ''
     });
 
-    const {login} = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
     const handleInputChange = (event) => {
         // este va estableciendo el balor de los input al state del formulario
@@ -30,7 +31,7 @@ function Login() {
                 // funciono el login
                 login(response.data.detalle);
                 Swal.fire({
-                    icon:'success',
+                    icon: 'success',
                     title: 'Mensaje',
                     text: 'Login correcto'
                 });
@@ -38,7 +39,7 @@ function Login() {
             .catch((error) => {
                 // fallo el login
                 Swal.fire({
-                    icon:'error',
+                    icon: 'error',
                     title: 'Mensaje',
                     text: 'Error en login'
                 });
@@ -49,7 +50,7 @@ function Login() {
     return (
         <section className="ftco-section">
             <div className="container">
-                
+
                 <div className="row justify-content-center">
                     <div className="col-md-7 col-lg-5">
                         <div className="wrap">
@@ -71,11 +72,10 @@ function Login() {
                                         <span toggle="#password-field" className="fa fa-fw fa-eye field-icon toggle-password" />
                                     </div>
                                     <div className="form-group">
-                                        <button type="submit" className="form-control btn btn-primary rounded submit px-3">Sign
-                                            In</button>
+                                        <button href="/profile" type="submit" className="form-control btn btn-primary rounded submit px-3">Sign In</button>
                                     </div>
                                 </form>
-                                <p className="text-center">No estas registrado? <a data-toggle="tab" href="#signup">Registrate</a></p>
+                                <p className="text-center">No estas registrado? <NavLink data-toggle="tab" to="/signup">Registrate</NavLink></p>
                             </div>
                         </div>
                     </div>

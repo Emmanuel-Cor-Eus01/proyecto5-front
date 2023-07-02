@@ -152,6 +152,12 @@ footer {
   background-repeat: no-repeat;
 }
 
+.container{
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero h1 {
   font-size: 5em;
 
@@ -272,8 +278,51 @@ footer {
   }
 
   .mapa{
-    height: 1400px;
+    height: 400px;
     width: auto;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 3em;
+  
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .hero h2 {
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .hero .btn {
+    display: block;
+    width: 200px;
+  
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+  
+    border: 3px solid white;
+    border-radius: 20px;
+  
+  }
+
+  .about-title{
+    font-size: 25px;
+    color: #ffffff;
+  }
+  
+  .text-about{
+    font-size: 15px;
+    color: #ffffff;
   }
 
 }

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="p-4">
@@ -10,39 +11,25 @@ const Footer = () => {
                 <div className="col-6 col-md">
 
                     <ul className="list-unstyled text-small">
-                        <li><a className="link-secondary" href="https://www.google.com/">Cool stuff</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Random feature</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Team feature</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Stuff for developers</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Another one</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Last time</a></li>
+                        <li><NavLink to="/home" className="btn">CHINA MARKETPLACE</NavLink></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
 
                     <ul className="list-unstyled text-small">
-                        <li><a className="link-secondary" href="https://www.google.com/">Resource name</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Resource</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Another resource</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Final resource</a></li>
+                        <li><NavLink to="/products" className="btn">PRODUCTOS</NavLink></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
 
                     <ul className="list-unstyled text-small">
-                        <li><a className="link-secondary" href="https://www.google.com/">Business</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Education</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Government</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Gaming</a></li>
+                        <li><NavLink to="/about" className="btn">ABOUT</NavLink></li>
                     </ul>
                 </div>
                 <div className="col-6 col-md">
 
                     <ul className="list-unstyled text-small">
-                        <li><a className="link-secondary" href="https://www.google.com/">Team</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Locations</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Privacy</a></li>
-                        <li><a className="link-secondary" href="https://www.google.com/">Terms</a></li>
+                        <li><NavLink to="/signup" className="btn">SIGNUP</NavLink></li>
                     </ul>
                 </div>
             </div>

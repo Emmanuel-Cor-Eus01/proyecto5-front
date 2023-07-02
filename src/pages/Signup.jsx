@@ -1,4 +1,5 @@
 import banerLogo from '../images/bg-2.jpg';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { registerService } from '../services/Auth.services';
 import Swal from 'sweetalert2';
@@ -79,7 +80,7 @@ function Signup() {
                                         <button type="submit" className="form-control btn btn-primary rounded submit px-3">SignUp</button>
                                     </div>
                                 </form>
-                                <p className="text-center">Tienes cuenta? <a data-toggle="tab" href='null'>LogIn</a></p>
+                                <p className="text-center">Tienes cuenta? <NavLink data-toggle="tab" to='/login'>LogIn</NavLink></p>
                             </div>
                         </div>
                     </div>

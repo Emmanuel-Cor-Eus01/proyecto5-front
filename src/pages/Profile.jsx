@@ -42,7 +42,7 @@ function Profile() {
     }
 
     return (
-        <div className="container mt-4">
+        <div className="container d-flex justift-content-center align-items-center mt-4">
             <form className="form-login" onSubmit={handleSubmit}>
                 <h1 className="text-center mb-5">Informacion de la cuenta</h1>
                 <div className="mb-3">
