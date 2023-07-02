@@ -19,7 +19,7 @@ Cuando se trata de comercio minorista en línea, China está realmente en una li
 Por consecuencia nuestra empresa esta dentro del mercado electronico de china, brindandole nuestros mejores productos hasta las puertas de su casa y teniendo varias bodegas dentro de la republica mexicana para que pueda checar la calidad de nuestros productos en fisico. <br></br>
                 </h4>
                 <h2 className='about-title text-center p-4'>NUESTRAS SEDES</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d222808.41208575078!2d-99.20534460373884!3d19.430158876869157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schina%20market!5e0!3m2!1ses!2smx!4v1688012374245!5m2!1ses!2smx" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='mapa'/>
+                <iframe className="mapa" title="Ubi" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d222808.41208575078!2d-99.20534460373884!3d19.430158876869157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schina%20market!5e0!3m2!1ses!2smx!4v1688012374245!5m2!1ses!2smx" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
 
             </div>
         </>

@@ -20,7 +20,7 @@ function AppRouter() {
         <Route path="/products" element={<ProductList />} />
         <Route path="/detail-product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/perfil" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
 
         <Route path="/" element={<Navigate to="home"/>}/>
     </Routes>

@@ -5,7 +5,7 @@ const Hero = () => {
             <div className="hero-inner">
                 <h1>CHINA MARKETPLACE</h1>
                 <h2>VENTA DE ARTICULOS AL MAYOREO Y MENUDEO</h2>
-                <a href="https://example.com/" className="btn">VER PRODUCTOS</a>
+                <NavLink to="/products" className="btn">VER PRODUCTOS</NavLink>
             </div>
         </div>
     );
